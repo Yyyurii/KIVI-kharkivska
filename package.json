@@ -7,8 +7,9 @@
   },
   "author": "Yurii Kryvko <yurii.kryvko@gmail.com>",
   "license": "ISC",
+  "homepage": "  https://yyyurii.github.io/KIVI-kharkivska/",
   "scripts": {
-    "deploy": "gh-pages -d newKivi",
+    "deploy": "gh-pages -d dist",
     "start": "gulp",
     "build": "gulp build"
   },
