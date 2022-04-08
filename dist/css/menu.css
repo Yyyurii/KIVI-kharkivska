@@ -12,10 +12,10 @@
   display: grid;
   grid-template-areas: "name price";
   grid-gap: 20px;
-  padding: 10px;
   height: 100%;
   position: relative;
   z-index: 2;
+  margin: 0 0 40px;
 }
 
 .menu__container:before {

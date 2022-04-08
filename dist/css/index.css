@@ -271,10 +271,10 @@ h6 {
   display: grid;
   grid-template-areas: "name price";
   grid-gap: 20px;
-  padding: 10px;
   height: 100%;
   position: relative;
   z-index: 2;
+  margin: 0 0 40px;
 }
 
 .menu__container:before {
@@ -303,6 +303,57 @@ h6 {
   text-align: center;
 }
 
+.coffee-beans__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px 40px;
+}
+
+.card {
+  margin: 15px 0;
+  padding: 15px 25px;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 81, 47, 0.4);
+  max-width: 265px;
+  height: 300px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 12px 7px rgba(0, 81, 47, 0.2) inset;
+  box-shadow: 0px 0px 12px 7px rgba(0, 81, 47, 0.2) inset;
+}
+
+.card h3 {
+  padding: 10px 0;
+  text-align: start;
+  font-weight: bold;
+}
+
+.card h4 {
+  text-align: start;
+}
+
+.card__img {
+  height: 200px;
+}
+
 body {
   color: #000;
   font-family: "Manrope-Regular";
@@ -329,6 +380,13 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0;
 }
 
 ._container {
@@ -375,6 +433,10 @@ hr {
 @media (max-width: 479.98px) {
   .burger {
     top: 15px;
+  }
+
+  .card {
+    max-width: 350px;
   }
 }
 

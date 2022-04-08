@@ -3,11 +3,12 @@
 @import "_fonts";
 @import "header";
 @import "menu";
+@import "coffee-beans";
 
 body {
 	color: $mainColor;
 	font-family: $fontFamily;
-    &._lock {
+	&._lock {
 		overflow: hidden;
 	}
 }
@@ -22,6 +23,13 @@ body {
 
 .page {
 	flex: 1 1 auto;
+}
+
+.section-title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px 0;
 }
 
 ._container {
