@@ -1,0 +1,9 @@
+@import "_mixins";
+
+@include font("Caveat-Bold", "Caveat-Bold", "400", "normal");
+@include font("Caveat-Medium", "Caveat-Medium", "400", "normal");
+@include font("Caveat-Regular", "Caveat-Regular", "400", "normal");
+
+@include font("Manrope-Bold", "Manrope-SemiBold", "400", "normal");
+@include font("Manrope-Light", "Manrope-Light", "400", "normal");
+@include font("Manrope-Regular", "Manrope-Regular", "400", "normal");
