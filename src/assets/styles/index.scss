@@ -2,6 +2,7 @@
 @import "_null";
 @import "_fonts";
 @import "header";
+@import "slider";
 @import "menu";
 @import "coffee-beans";
 @import "contacts";
@@ -32,6 +33,32 @@ body {
 	font-weight: bold;
 	text-align: center;
 	margin: 50px 0;
+}
+
+.scroll-up {
+	display: block;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	padding: 4px 10px;
+	cursor: pointer;
+	opacity: 0.8;
+
+	&.hide {
+		display: none;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+
+	@media (max-width: ($md3 + px)) {
+		right: 15px;
+	}
+
+	@media (max-width: ($md4 + px)) {
+		right: 7px;
+	}
 }
 
 ._container {

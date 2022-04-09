@@ -23,6 +23,10 @@
   font-size: calc(25px + 5 * ((100vw - 320px) / 1600));
 }
 
+.logo__title {
+  color: rgb(0, 81, 47);
+}
+
 .logo img {
   width: calc(50px + 50 * ((100vw - 320px) / 1600));
   height: calc(50px + 50 * ((100vw - 320px) / 1600));

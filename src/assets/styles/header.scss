@@ -20,6 +20,7 @@
     }
 
     &__title {
+        color: rgba(0, 81, 47, 1);
         @media (max-width: ($md3 + px)) {
             display: none;
         }
