@@ -1,5 +1,8 @@
 const scrollUpBtn = document.querySelector('.scroll-up');
 const burgerIcon = document.querySelector('.burger');
+const burgerList = document.querySelector('.burger-list');
+const burgerListTabs = document.querySelectorAll('.burger-list a');
+console.log(burgerListTabs);
 
 scrollUpBtn.addEventListener('click', () => {
     window.scrollTo({
@@ -16,14 +19,19 @@ document.addEventListener('scroll', () => {
     }
 })
 
+//burger
 burgerIcon.addEventListener('click', () => {
     burgerIcon.classList.toggle('_active');
-    document.body.classList.toggle('_stop-scrolling');
+    burgerList.classList.toggle('_active');
+    document.body.classList.toggle('_lock');
 });
 
-// $('.header__bottom a').click(() => {
-//   if ($burgerIcon.hasClass('_active')) {
-//     $burgerIcon.toggleClass('_active');
-//     $('body').toggleClass('_stop-scrolling');
-//   }
-// })
+burgerListTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        if(!burgerIcon.classList.contains('hide')) {
+            burgerIcon.classList.toggle('_active');
+            burgerList.classList.toggle('_active');
+            document.body.classList.toggle('_lock');
+        }
+    })
+})
