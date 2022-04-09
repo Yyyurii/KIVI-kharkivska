@@ -1,9 +1,13 @@
+@import '_variable';
+
 .contacts {
+
     &__container {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 0 0 50px;
+        color: $green;
     }
 
     &__map {

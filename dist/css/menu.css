@@ -16,6 +16,7 @@
   position: relative;
   z-index: 2;
   margin: 0 0 50px;
+  color: #00512f;
 }
 
 .menu__container:before {

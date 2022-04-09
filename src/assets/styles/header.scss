@@ -67,6 +67,7 @@
 .location {
     display: flex;
     align-items: center;
+    color: $green;
 
     &__img {
         @include adaptiv-value("width", 25, 18, 0);
