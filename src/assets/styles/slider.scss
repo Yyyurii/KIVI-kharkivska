@@ -53,8 +53,12 @@
   width: 100%;
   position: relative;
 
-  @media (max-width: 991.98px) {
+  @media (max-width: ($md1 + px)) {
     flex-direction: column;
+  }
+
+  @media (max-width:($md3 + px)) {
+    justify-content: flex-start;
   }
 }
 
@@ -199,9 +203,6 @@
     color: white;
   }
 
-  &__btn-href {
-  }
-
   &__img {
     text-align: center;
   }
@@ -209,5 +210,13 @@
   img {
     max-width: 38vmax;
     padding: 20px 0;
+
+    &.coffee-bag {
+      @media (max-width:($md3 + px)) {
+        max-width: 150px;
+      }
+    }
   }
+
+
 }
